@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/Application/">
+    <Project Path="cleanArch.Application/cleanArch.Application.csproj" Id="7a79f557-944b-4785-86e3-4bd457e98b99" />
+  </Folder>
+  <Folder Name="/Domain/">
+    <Project Path="cleanAch.Domain/cleanAch.Domain.csproj" />
+  </Folder>
+  <Folder Name="/Infra.Data/">
+    <Project Path="infra.Data/infra.Data.csproj" />
+  </Folder>
+  <Folder Name="/Infra.IoC/">
+    <Project Path="cleanArch.Infra.IoC/cleanArch.Infra.IoC.csproj" Id="9f549474-837a-408b-8cc7-cca0dc325e4e" />
+  </Folder>
+  <Folder Name="/Presentation/">
+    <Project Path="cleanArch.Mvc/cleanArch.Mvc.csproj" />
+  </Folder>
+</Solution>

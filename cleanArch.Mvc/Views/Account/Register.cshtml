@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Register";
+}
+@model cleanArch.Mvc.Models.RegisterViewModel
+
+<div class="container bg-light">
+    <h1>Register</h1>
+</div>
+<form method="post">
+  <div class="mb-3">
+    <label for="userId" class="form-label">User ID</label>
+    <input type="text" class="form-control" id="userId" asp-for="UserID" required>
+<span asp-validation-for="UserID"
+              class="text-danger"></span>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="text" class="form-control" id="email" asp-for="Email" required>
+<span asp-validation-for="Email"
+              class="text-danger"></span>
+  </div>
+
+   <div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input type="password" class="form-control" id="password" asp-for="Password" required>
+<span asp-validation-for="Password"
+              class="text-danger"></span>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

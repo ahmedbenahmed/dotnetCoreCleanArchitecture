@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+@model cleanArch.Mvc.Models.LoginViewModel
+
+<div class="container bg-light">
+    <h1>Login</h1>
+</div>
+<form method="post">
+    <div class="mb-3">
+        <label for="userId" class="form-label">User ID</label>
+        <input type="text" class="form-control" id="userId" asp-for="UserId" >
+        <span asp-validation-for="UserId"
+              class="text-danger"></span>
+    </div>
+    
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" asp-for="Password" >
+        <span asp-validation-for="Password"
+              class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <input type="hidden"  asp-for="RedirectUrl" />
+</form>
